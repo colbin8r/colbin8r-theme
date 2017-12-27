@@ -1,0 +1,16 @@
+{
+  "name": "colbin8r-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colbin8r/colbin8r-theme/"
+  },
+  "author": "Colby Rogness",
+  "dependencies": {
+    "iotacss": "^1.5.0",
+    "iotacss-settings-core": "^1.0.2",
+    "iotacss-tools-core": "^1.0.9"
+  }
+}
