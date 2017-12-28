@@ -1,43 +1,41 @@
-// iotaCSS
+// 1. Import the initial variables
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
 
-@import 'settings/core';
-@import 'settings/baseline';
-@import 'settings/colors';
-@import 'settings/type';
-@import 'settings/spacing';
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
 
-@import 'tools/core';
-@import 'tools/breakpoint';
-@import 'tools/ms';
-@import 'tools/rtl';
-@import 'tools/type';
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-serif;
 
-@import 'base/initialize';
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
 
-@import 'objects/container';
-@import 'objects/grid';
-@import 'objects/list';
-@import 'objects/media';
-@import 'objects/type';
+// 5. Add new color variables to the color map.
+@import "~bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
 
-@import 'components/button';
-
-@import 'utilities/align-items';
-@import 'utilities/align';
-@import 'utilities/bgcolor';
-@import 'utilities/clearfix';
-@import 'utilities/color';
-@import 'utilities/display';
-@import 'utilities/flex-direction';
-@import 'utilities/float';
-@import 'utilities/justify-content';
-@import 'utilities/margin';
-@import 'utilities/opacity';
-@import 'utilities/padding';
-@import 'utilities/position';
-@import 'utilities/pull';
-@import 'utilities/push';
-@import 'utilities/size';
-@import 'utilities/text';
-@import 'utilities/transform';
-@import 'utilities/weight';
+// 6. Import the rest of Bulma
+@import "~bulma/bulma";
