@@ -1,18 +1,23 @@
 // Custom colors
 $color-red: #E63946;
 $color-white: #F1FAEE;
-$color-blue: #F1FAEE;
-$color-blue-light: #A8DADC;
 $color-blue-dark: #1D3557;
+$color-blue: #457B9D;
+$color-blue-light: #A8DADC;
 
 // Color overrides
+// Bulma colors
 $blue: $color-blue;
 $red: $color-red;
-
-$primary: $blue;
-
-
-
+$blue-invert: findColorInvert($blue);
+$red-invert: findColorInvert($red);
+$primary: $color-blue-dark;
+$primary-invert: findColorInvert($primary);
+$link: $color-blue-dark;
+// non-Bulma colors
+$secondary: $red;
+$primary-light: $blue;
+$primary-extra-light: $color-blue-light;
 
 
 // // Update blue

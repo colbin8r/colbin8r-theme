@@ -12,13 +12,10 @@ $family-body: 'Oxygen', $default-family-sans;
 $family-display: 'Montserrat', $default-family-sans;
 $family-monospace: 'Oxygen Mono', $default-family-mono;
 
-// Font family overrides
-$family-primary: $family-body;
-$code-family: $family-monospace;
-
 // Sizing
-$body-size: $base-size;
-$code-size: 0.875em;
+$body-size: $size-normal;
+$code-size: $size-small;
+// $code-size: 0.875em;
 // $line-height: 
 
 // Weights
@@ -32,6 +29,3 @@ $weight-thin: 100;
 $weight-extra-light: 200;
 $weight-extra-bold: 800;
 $weight-black: 900;
-
-// Weight overrides
-$strong-weight:	$weight-bold;

@@ -1,16 +1,25 @@
 // Base font size
 $base-size: 20px;
+// $base-ratio: 1.333;
+$base-ratio: 1.2;
 
 // Modular scale setup
 // http://www.modularscale.com/?20&px&1.2
-@import '~modularscale';
+@import '~modularscale-sass/stylesheets/modularscale';
 $modularscale: (
   base: $base-size,
-  ratio: 1.2
+  ratio: $base-ratio
 );
 
 // Base sizes
-
+// based on a modular scale (see above)
+$size-1: ms(5);
+$size-2: ms(4);
+$size-3: ms(3);
+$size-4: ms(2);		// large
+$size-5: ms(1);		// medium
+$size-6: ms(0);		// normal
+$size-7: ms(-1);	// small
 // $size-1: 3rem !default;
 // $size-2: 2.5rem !default;
 // $size-3: 2rem !default;

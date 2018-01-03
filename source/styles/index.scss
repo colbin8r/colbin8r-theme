@@ -7,16 +7,16 @@
 @import 'config/colors';
 @import 'config/type';
 
-// 3. Set the derived variables
+// 3. Import base styles, including some Bulma overrides
+@import 'base/type';
+@import 'base/link';
 
-// 4. Add new color variables to the color map.
+// 4. Import the rest of Bulma
 @import "~bulma/sass/utilities/derived-variables.sass";
-// $addColors: (
-//   "twitter":($twitter, $twitter-invert),
-//   "linkedin": ($linkedin, $linkedin-invert),
-//   "github": ($github, $github-invert)
-// );
-// $colors: map-merge($colors, $addColors);
-
-// 5. Import the rest of Bulma
 @import "~bulma/bulma";
+
+// 5. Import styles
+// these styles take precedence over Bulma's because they come last
+@import 'components/wordmark';
+@import 'components/hamburger';
+@import 'components/console';

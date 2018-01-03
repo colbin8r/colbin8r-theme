@@ -1,0 +1,24 @@
+@import '../config/type';
+@import '../config/colors';
+@import '../config/sizes';
+
+.console {
+	background-color: $primary;
+	padding: 1rem;
+	font-size: $size-4;
+	font-family: $family-code;
+
+	.console__carat, .console__prompt {
+		color: $secondary;
+	}
+
+	.console__carat {
+		font-size: 2.25em;
+	}
+	.console__prompt {
+		// color: red;
+	}
+	.console__input {
+		color: $primary-invert;
+	}
+}

@@ -1,3 +1,61 @@
+// Font family overrides
+$family-primary: $family-body;
+$code-family: $family-monospace;
+
+// Headings
+
+// always display headings in display font faces
 h1, h2, h3, h4, h5, h6 {
 	font-family: $family-display;
+}
+
+$title-size:				$size-3; // default title size without .is-# modifier (e.g. .is-1)
+$title-color:				$primary;
+$title-weight:				$weight-bold;
+$title-strong-weight:		$weight-black; // for <strong> tags inside .titles
+$title-strong-color:		$primary;
+$subtitle-size:				$size-5; // default subtitle size without .is-# modifier
+$subtitle-color:			$primary;
+$subtitle-weight:			$weight-normal;
+$subtitle-strong-weight:	$weight-semibold; // for <strong> tags inside .subtitles
+$subtitle-color:			$primary;
+
+// Body text
+
+$text: $primary;
+$text-invert: findColorInvert($text);
+$text-light: $primary-light;
+$text-strong: $primary;
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-visited: $secondary;
+
+$link-hover: $primary-light;
+$link-hover-border: $primary-light;
+
+$link-focus: $primary-light;
+$link-focus-border: $primary-light;
+
+$link-active: $primary-extra-light;
+$link-active-border: $primary-extra-light;
+
+// Weight overrides
+$strong-weight:	$weight-bold;
+
+// Helper classes
+
+// weights
+.has-text-weight-thin {
+	font-weight: $weight-thin;
+}
+.has-text-weight-extra-light {
+	font-weight: $weight-extra-light;
+}
+.has-text-weight-extra-bold {
+	font-weight: $weight-extra-bold;
+}
+.has-text-weight-black {
+	font-weight: $weight-black;
 }
