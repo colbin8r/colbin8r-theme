@@ -27,7 +27,10 @@ $text-invert: findColorInvert($text);
 $text-light: $primary-light;
 $text-strong: $primary;
 
+$strong-weight:	$weight-bold;
+
 // Links
+
 $link: $primary;
 $link-invert: $primary-invert;
 $link-visited: $secondary;
@@ -41,21 +44,18 @@ $link-focus-border: $primary-light;
 $link-active: $primary-extra-light;
 $link-active-border: $primary-extra-light;
 
-// Weight overrides
-$strong-weight:	$weight-bold;
-
 // Helper classes
 
 // weights
 .has-text-weight-thin {
-	font-weight: $weight-thin;
+	font-weight: $weight-thin !important;
 }
 .has-text-weight-extra-light {
-	font-weight: $weight-extra-light;
+	font-weight: $weight-extra-light !important;
 }
 .has-text-weight-extra-bold {
-	font-weight: $weight-extra-bold;
+	font-weight: $weight-extra-bold !important;
 }
 .has-text-weight-black {
-	font-weight: $weight-black;
+	font-weight: $weight-black !important;
 }

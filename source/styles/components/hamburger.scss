@@ -1,13 +1,21 @@
-$hamburger-padding-x                       : 15px;
-$hamburger-padding-y                       : 15px;
-$hamburger-layer-width                     : 40px;
-$hamburger-layer-height                    : 4px;
-$hamburger-layer-spacing                   : 6px;
-$hamburger-layer-color                     : #000;
-$hamburger-layer-border-radius             : 4px;
-$hamburger-hover-opacity                   : 0.7;
+$hamburger-padding-x                       : 0;
+$hamburger-padding-y                       : 0;
+$hamburger-layer-width                     : $size-normal * 2;
+$hamburger-layer-height                    : $size-normal / 4;
+$hamburger-layer-spacing                   : $size-normal / 3;
+$hamburger-layer-color                     : $link;
+$hamburger-layer-border-radius             : 0;
+$hamburger-hover-opacity                   : 100;
 $hamburger-hover-transition-duration       : 0.15s;
 $hamburger-hover-transition-timing-function: linear;
+// $hamburger-padding-x                       : 15px;
+// $hamburger-padding-y                       : 15px;
+// $hamburger-layer-width                     : 40px;
+// $hamburger-layer-height                    : 4px;
+// $hamburger-layer-spacing                   : 6px;
+// $hamburger-layer-color                     : #000;
+// $hamburger-layer-border-radius             : 4px;
+// $hamburger-hover-opacity                   : 0.7;
 
 // To use CSS filters as the hover effect instead of opacity,
 // set $hamburger-hover-use-filter as true and
@@ -51,3 +59,19 @@ $hamburger-types: (
 );
 
 @import '~hamburgers/_sass/hamburgers/hamburgers';
+
+.hamburger {
+
+  outline: 0;
+
+  &:hover {
+
+    .hamburger-inner,
+    .hamburger-inner:before,
+    .hamburger-inner:after {
+      background-color: $link-hover;
+    }
+
+  }
+
+}
