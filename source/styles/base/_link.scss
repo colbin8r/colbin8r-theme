@@ -1,0 +1,11 @@
+.link--primary {
+	color: $secondary;
+
+	&:hover, &:focus {
+		color: lighten($secondary, 20%);
+	}
+
+	&:active {
+		color: darken($secondary, 20%);
+	}
+}

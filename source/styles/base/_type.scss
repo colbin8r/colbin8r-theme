@@ -59,3 +59,7 @@ $link-active-border: $primary-extra-light;
 .has-text-weight-black {
 	font-weight: $weight-black !important;
 }
+
+.is-accent {
+	color: $secondary;
+}

@@ -3,9 +3,9 @@
 @import '../config/sizes';
 
 .console {
-	background-color: $primary;
 	padding: $size-medium;
 	font-size: $size-medium;
+	background-color: $primary;
 	font-family: $family-code;
 
 	.console__prompt {
@@ -13,5 +13,10 @@
 	}
 	.console__input {
 		color: $primary-invert;
+	}
+
+	@include touch {
+		padding: $size-normal;
+		font-size: $size-normal;
 	}
 }

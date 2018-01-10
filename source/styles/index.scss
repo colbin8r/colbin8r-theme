@@ -10,6 +10,8 @@
 
 // 3. Import base styles, including some Bulma overrides
 @import 'base/type';
+@import 'base/link';
+@import 'base/sizing';
 
 // 4. Import the rest of Bulma
 @import "~bulma/bulma";
@@ -20,3 +22,4 @@
 @import 'components/wordmark';
 @import 'components/hamburger';
 @import 'components/console';
+@import 'components/slideout';
