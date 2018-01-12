@@ -1,0 +1,23 @@
+.curtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 997;
+	background: transparentize($white, 0.4);
+	@extend .animated;
+}
+
+.curtain--hidden {
+	display: none;
+	@extend .fadeOut;
+}
+
+.curtain--visible {
+	@extend .fadeIn;
+
+	// & ~ main {
+	// 	filter: blur(10px);
+	// }
+}

@@ -14,5 +14,28 @@
 		hamburger.classList.toggle("is-active");
 		// Do something else, like open/close menu
 	});
+
+	// Navigation drawer (.menu)
+	var curtain = document.querySelector('.curtain');
+	var menus = Array.of(document.querySelector('.menu'));
+	// var menus = document.querySelector('.menu');
+	console.log(menus);
+	menus.forEach(function(menu) {
+		var toggle = menu.querySelector('.menu__toggle');
+		var content = menu.querySelector('.menu__content');
+		toggle.addEventListener('click', function() {
+			menu.classList.toggle('menu--closed');
+			menu.classList.toggle('menu--open');
+			curtain.classList.toggle('curtain--visible');
+			curtain.classList.toggle('curtain--hidden');
+			// content.classList.toggle('fadeInRight');
+			// content.classList.toggle('fadeOut');
+		});
+		// content.addEventListener('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
+		// 	e.target.removeEventListener(e.type, arguments.callee);
+
+		// });
+	});
+
 	</script>
 </html>
