@@ -1,8 +1,24 @@
-# Header
-# menu:
-#   Home: /
-#   Archives: /archives
-# rss: /atom.xml
+# Navigation
+menu:
+  primary:
+    Home: /
+    Work: /work
+    Blog: /blog
+    Contact: /contact
+  secondary:
+    About: /about
+    Colonograph: /colonograph
+  social:
+    GitHub:
+      icon: 'github'
+      url: 'https://github.com/colbin8r/'
+    LinkedIn:
+      icon: 'linkedin'
+      url: 'https://www.linkedin.com/in/colbyrogness/'
+rss:
+  enabled: false
+  url: /atom.xml
+  icon: 'fas fa-rss'
 
 # Content
 # excerpt_link: Read More

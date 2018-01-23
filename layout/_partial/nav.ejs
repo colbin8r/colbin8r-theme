@@ -6,18 +6,22 @@
 	</button>
 	<section id="menu" class="menu__content">
 		<ul class="menu__content__primary">
-			<li class="menu__item menu__item--active"><a href="">Home</a></li>
-			<li class="menu__item"><a href="">Work</a></li>
-			<li class="menu__item"><a href="">Blog</a></li>
-			<li class="menu__item"><a href="">Contact</a></li>
+			<% for (var m in theme.menu.primary) { %>
+				<li class="menu__item"><a href="<%- url_for(theme.menu.primary[m]) %>"><%= m %></a></li>
+			<% } %>
 		</ul>
 		<ul class="menu__content__secondary">
-			<li class="menu__item"><a href="">About</a></li>
-			<li class="menu__item"><a href="">Colonograph</a></li>
+			<% for (var m in theme.menu.secondary) { %>
+				<li class="menu__item"><a href="<%- url_for(theme.menu.secondary[m]) %>"><%= m %></a></li>
+			<% } %>
 		</ul>
 		<ul class="menu__content__social">
-			<li class="menu__item"><a href="" class="icon"><i class="fab fa-github"></i></a></li>
-			<li class="menu__item"><a href="" class="icon"><i class="fab fa-linkedin"></i></a></li>
+			<% for (var m in theme.menu.social) { %>
+			<li class="menu__item"><a target="_blank" href="<%- theme.menu.social[m].url %>" class="icon"><i class="fab fa-<%- theme.menu.social[m].icon %>"></i></a></li>
+			<% } %>
+			<% if (theme.rss.enabled) { %>
+				<li class="menu__item"><a href="<%- theme.rss.url %>" class="icon"><i class="<%- theme.rss.icon %>"></i></a></li>
+			<% } %>
 		</ul>
 	</section>
 </nav>
