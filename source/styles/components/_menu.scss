@@ -33,7 +33,15 @@
 
 .menu__content {
 	z-index: 998;
-	@extend .animated;
+	// @extend .animated;
+	
+}
+
+.menu__item {
+
+}
+
+.menu__item--active {
 	
 }
 
@@ -59,13 +67,11 @@
 }
 
 .menu--open {
-	.menu__content {
-		@extend .fadeInRight;
-	}
+	
 }
 
 .menu--closed {
 	.menu__content {
-		@extend .fadeOut;
+		display: none;
 	}
 }

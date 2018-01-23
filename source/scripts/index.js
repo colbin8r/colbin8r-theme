@@ -1,1 +1,3 @@
-console.info('Hello world!');
+(() => {
+	console.log('index.js');
+})();
