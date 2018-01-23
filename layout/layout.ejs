@@ -2,7 +2,18 @@
 <html>
 	<%- partial('_partial/head') %>
 	<body>
-		<%- partial('_partial/nav') %>
-		<%- body %>
+		<%- partial('_partial/curtain') %>
+
+		<main class="hero is-fullheight">
+			
+			<%- partial('_partial/header') %>
+
+			<div class="hero-center">
+				<%- body %>
+			</div>
+
+			<%- partial('_partial/footer') %>
+
+		</main>
 	</body>
 </html>
