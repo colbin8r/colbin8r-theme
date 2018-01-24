@@ -1,11 +1,12 @@
-#menu {
+.menu {
 	position: fixed;
-	// width: 25vw;
+	z-index: 860;
 	width: 50%;
 	right: 0;
 	top: 0;
 	height: 100vh;
 
+	background: $white;
 	padding: $size-normal ($size-normal * 4) ($size-normal * 2);
 	border-left: ($size-micro / 2) solid $primary;
 
@@ -20,22 +21,6 @@
 	@include widescreen() {
 		width: 25%;
 	}
-}
-
-.menu {
-
-}
-
-.menu__toggle {
-	position: relative;
-	z-index: 999;
-}
-
-.menu__content {
-	z-index: 998;
-	background: $white;
-	// @extend .animated;
-	
 }
 
 .menu__item {
@@ -59,34 +44,34 @@
 	}
 }
 
-.menu__content__primary .menu__item--active a::before {
+.menu__primary .menu__item--active a::before {
 	height: ($size-large / 2);
 	width: ($size-large / 2);
 	left: ($size-large * 1.25);
 	margin-top: ($size-large / 2);
 }
 
-.menu__content__primary, .menu__content__secondary, .menu__content__social {
+.menu__primary, .menu__secondary, .menu__social {
 	font-family: $family-display;
 	li {
 		margin: ($size-large / 2) 0;
 	}
 }
 
-// .menu__content__primary, .menu__content__secondary {
+// .menu__primary, .menu__secondary {
 	
 // }
 
-.menu__content__primary {
+.menu__primary {
 	font-size: $size-large;
 	font-weight: $weight-bold;
 }
 
-.menu__content__secondary {
+.menu__secondary {
 	font-size: $size-small;
 }
 
-.menu__content__social {
+.menu__social {
 	.menu__item {
 		float: left;
 		font-size: $size-3;
@@ -99,7 +84,5 @@
 }
 
 .menu--closed {
-	.menu__content {
-		display: none;
-	}
+	display: none;
 }
