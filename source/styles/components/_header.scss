@@ -23,18 +23,28 @@
 	}
 
 	.header__logo {
+		z-index: 840;
 		left: 0;
 		font-size: $size-1;
 		line-height: 1;
 	}
 
 	.header__menu-toggle-container {
-		right: 0;
 		z-index: 870;
+		right: 0;
 	}
 
 	.header__menu-toggle {
 		margin: 25% 0;
+	}
+
+	.header__backdrop {
+		position: fixed;
+		z-index: 830;
+		top: 0;
+		width: 100%;
+		height: calc(#{$size-1} + 2rem);
+		background: $white;
 	}
 
 }
