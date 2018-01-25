@@ -3,7 +3,8 @@
 }
 
 .margin-sides {
-	margin: 0 ($size-normal * 2) !important;
+	margin-left: ($size-normal * 2) !important;
+	margin-right: ($size-normal * 2) !important;
 }
 
 // .container {

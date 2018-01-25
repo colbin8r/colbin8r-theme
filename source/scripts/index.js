@@ -38,7 +38,7 @@ $(() => {
 		}
 	}
 
-	const toggle = $('.menu-toggle')
+	const toggle = $('.header__menu-toggle')
 	const menu = $('.menu');
 
 	toggle.click(() => {
